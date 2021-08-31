@@ -4,6 +4,10 @@ import Input from "./components/input"
 import ManageItemList from "./components/manage_item_list"
 import { Box } from "@material-ui/core"
 import "./style.css"
+import React from "react"
+
+
+export const ItemContext = React.createContext()
 
 const App = (props) => {
   const [manageItem, setManageItem] = useState([])
@@ -29,11 +33,13 @@ const App = (props) => {
   }
 
   return (
-    <Box className="App" bgcolor="#e3f0f9">
-      <Header />
-      <Input addItem={addItem} />
-      <ManageItemList items={manageItem} removeItem={removeItem} />
-    </Box>
+    <ItemContext.Provider value={removeItem}>
+      <Box className="App" bgcolor="#e3f0f9">
+        <Header />
+        <Input addItem={addItem} />
+        <ManageItemList items={manageItem} />
+      </Box>
+    </ItemContext.Provider>
   )
 }
 

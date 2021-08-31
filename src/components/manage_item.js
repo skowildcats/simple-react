@@ -1,4 +1,9 @@
-const ManageItem = ({ item, removeItem }) => {
+import { useContext} from "react"
+import { ItemContext } from "../App"
+
+const ManageItem = ({ item }) => {
+  const removeItem = useContext(ItemContext)
+
   return (
     <div>
       {item.title}

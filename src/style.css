@@ -27,11 +27,14 @@
   width: fit-content;
   min-width: 350px;
   margin: auto;
+  padding-bottom: 10px; 
 }
 
 #item-list > div > span{
   font-weight: bold;
   font-size: 20px;
+  display: inline-block;
+  margin: 10px;
 }
 
 #item-list > div > div {
