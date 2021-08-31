@@ -15,6 +15,7 @@ const Input = ({ addItem }) => {
         <input
           value={input}
           type="text"
+          aria-label="user-input"
           onChange={(e) => setInput(e.currentTarget.value)}></input>
         <button>Add item</button>
       </div>
