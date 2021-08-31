@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from './components/header'
 import Input from './components/input'
 import ManageItemList from './components/manage_item_list';
+import { Box } from '@material-ui/core';
 
 const App = (props) => {
   const [manageItem, setManageItem] = useState([])
@@ -18,11 +19,11 @@ const App = (props) => {
   }
 
   return (
-    <div className="App">
+    <Box className="App" bgcolor="#e3f0f9">
       <Header />
       <Input addItem = {addItem}/>
       <ManageItemList items={manageItem} removeItem={removeItem}/>
-    </div>
+    </Box>
   );
 }
 
