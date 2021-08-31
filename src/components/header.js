@@ -1,8 +1,8 @@
 
-let Header = (props) => {
+const Header = (props) => {
   return(
     <div>
-      Hello
+      Manage my items
     </div>
   )
 }
