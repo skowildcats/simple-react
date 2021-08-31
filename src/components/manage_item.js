@@ -1,11 +1,8 @@
-const ManageItem = ({item, removeItem}) => {
-
+const ManageItem = ({ item, removeItem }) => {
   return (
     <div>
       {item.title}
-      <button onClick={() => removeItem(item.id)}>
-        x
-      </button>
+      <button onClick={() => removeItem(item.id)}>x</button>
     </div>
   )
 }
