@@ -1,0 +1,51 @@
+#header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#input {
+  padding: 10px;
+  background-color: #d7d2cb;
+}
+
+#input > div {
+  width: fit-content;
+  margin: auto;
+}
+
+#input input {
+  width: 300px;
+  padding: 3px;
+}
+
+#item-list {
+  background-color: #ddc9a1;
+}
+
+#item-list > div {
+  width: fit-content;
+  min-width: 350px;
+  margin: auto;
+}
+
+#item-list > div > span{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#item-list > div > div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #c28e9f;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+#item-list > div > div > button{
+  border: none;
+  padding: none;
+  background-color: inherit;
+  cursor: pointer;
+}

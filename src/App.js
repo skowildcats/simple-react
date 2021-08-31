@@ -3,6 +3,7 @@ import Header from './components/header'
 import Input from './components/input'
 import ManageItemList from './components/manage_item_list';
 import { Box } from '@material-ui/core';
+import "./style.css"
 
 const App = (props) => {
   const [manageItem, setManageItem] = useState([])

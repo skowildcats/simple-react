@@ -1,7 +1,6 @@
-
 const Header = (props) => {
   return(
-    <div>
+    <div id="header">
       Manage my items
     </div>
   )
