@@ -1,4 +1,4 @@
-import { useContext} from "react"
+import { useContext } from "react"
 import { ItemContext } from "../App"
 
 const ManageItem = ({ item }) => {

@@ -6,7 +6,6 @@ import { Box } from "@material-ui/core"
 import "./style.css"
 import React from "react"
 
-
 export const ItemContext = React.createContext()
 
 const App = (props) => {
